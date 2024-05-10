@@ -8,7 +8,7 @@ export default class extends BaseSchema {
       table.increments('id')
       table.string('nome', 45).notNullable()
       table.decimal('preco').notNullable()
-      table.string('tamanho', 45)
+      table.string('tamanho', 45).nullable()
       table.integer('tipo_id').unsigned().references('id').inTable('tipos')
 
       table.timestamp('created_at')

@@ -5,7 +5,7 @@ export default class extends BaseSeeder {
   async run() {
     
     await Produto.createMany([
-      {nome: "Coca-Cola lata", preco: 6.5, tamanho: "330ml", tipoId: 1},
+      {id:1, nome: "Coca-Cola lata", preco: 6.5, tamanho: "330ml", tipoId: 1},
       {nome: "Coca-Cola 2L", preco: 10, tamanho: "2L", tipoId: 1},
       {nome: "Coca-Cola 600", preco: 8, tamanho: "600ml", tipoId: 1 },
       {nome: "Coca-Cola ks", preco: 6.5, tamanho: "290ml", tipoId: 1},

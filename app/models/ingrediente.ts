@@ -11,6 +11,9 @@ export default class Ingrediente extends BaseModel {
  @column()
  declare descricao: string
 
+ @column()
+ declare tipoId: number
+
 @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime
 
