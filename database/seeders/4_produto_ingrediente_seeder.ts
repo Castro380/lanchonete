@@ -26,6 +26,7 @@ export default class extends BaseSeeder {
       {produtoId:10,ingredienteId:7},
       {produtoId:11,ingredienteId:8},
       {produtoId:12,ingredienteId:9},
+      {produtoId:13,ingredienteId:7},
       {produtoId:13,ingredienteId:10},
       {produtoId:14,ingredienteId:11},
       {produtoId:15,ingredienteId:12},
@@ -33,11 +34,6 @@ export default class extends BaseSeeder {
       {produtoId:17,ingredienteId:14},
       {produtoId:18,ingredienteId:15},
       {produtoId:19,ingredienteId:16},
-      {produtoId:20,ingredienteId:17},
-      {produtoId:21,ingredienteId:18},
-      {produtoId:22,ingredienteId:19},
-      {produtoId:23,ingredienteId:20},
-      {produtoId:24,ingredienteId:21},
       
     ])
   }

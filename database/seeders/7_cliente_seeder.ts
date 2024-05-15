@@ -1,5 +1,5 @@
-import Cliente from '#models/cliente'
 import { BaseSeeder } from '@adonisjs/lucid/seeders'
+import Cliente from '#models/cliente'
 
 export default class extends BaseSeeder {
   async run() {

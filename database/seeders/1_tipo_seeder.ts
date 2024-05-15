@@ -8,8 +8,7 @@ export default class extends BaseSeeder {
       {id: 1, nome: 'Bebidas'},
       {id: 2, nome:'Hamburguer'},
       {id: 3, nome: 'Sobremesas'},
-      {id: 4, nome: 'BebHot Dog'},
-      {id: 5, nome: 'Porções'},
+      {id: 4, nome: 'Porções'},
     ])
 
   }
