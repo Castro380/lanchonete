@@ -9,7 +9,7 @@ export default class CargosController {
         const page = request.input('page', 1)
         const perPage = request.input('perPage', 10)
 
-        return await Cargo.query().paginate(page, perPage)
+        return await Cargo.query().preload('funcionarios').paginate(page, perPage)
     }
 
     async show({params}: HttpContext){

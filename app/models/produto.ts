@@ -3,6 +3,7 @@ import { BaseModel, column, belongsTo, manyToMany } from '@adonisjs/lucid/orm'
 import type { BelongsTo, ManyToMany } from '@adonisjs/lucid/types/relations'
 import Tipo from './tipo.js'
 import Ingrediente from './ingrediente.js'
+import Comanda from './comanda.js'
 
 export default class Produto extends BaseModel {
 
@@ -33,6 +34,11 @@ export default class Produto extends BaseModel {
   @manyToMany(()=>Ingrediente, {
     'pivotTable': 'produto_ingredientes',
   })
-  declare Ingredientes: ManyToMany<typeof Ingrediente>
+  declare ingredientes: ManyToMany<typeof Ingrediente>
+
+  @manyToMany(()=>Comanda, {
+    'pivotTable': 'produto_comandas',
+  })
+  declare comandas: ManyToMany<typeof Comanda>
 
 }

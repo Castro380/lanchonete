@@ -16,7 +16,8 @@ export default class ProdutosController {
         return await Produto.query()
                             .where('id', params.id)
                             .preload('tipo')
-                            .preload('Ingredientes')
+                            .preload('ingredientes')
+                            .preload('comandas')
                             .first()
     }
 

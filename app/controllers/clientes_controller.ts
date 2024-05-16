@@ -9,7 +9,7 @@ export default class ClientesController {
         const page = request.input('page', 1)
         const perPage = request.input('perPage', 10)
 
-        return await Cliente.query().paginate(page, perPage)
+        return await Cliente.query().preload('comandas').paginate(page, perPage)
     }
 
     async show({params}: HttpContext){
